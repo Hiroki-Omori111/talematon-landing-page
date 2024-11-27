@@ -54,5 +54,5 @@ const config: GatsbyConfig = {
 export default config;
 
 module.exports = {
-  pathPrefix: "/reponame",
+  pathPrefix: "/talematon-landing-page",
 };
