@@ -9,18 +9,27 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-type NewsItem = {
-  category: string;
+export enum Category {
+  "イベント",
+  "メディア",
+  "コラボ",
+  "募集",
+}
+
+type Genre = "government" | "media" | "creator" | "student";
+
+export type NewsItem = {
+  category: Category;
   date: string;
   title: string;
-  type: string;
+  type: Genre;
 };
 
-type NewsListProps = {
+type Props = {
   news: NewsItem[];
 };
 
-const NewsList: React.FC<NewsListProps> = ({ news }) => {
+const NewsList: React.FC<Props> = ({ news }) => {
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
