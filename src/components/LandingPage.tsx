@@ -8,6 +8,7 @@ import {
   Sparkles,
   ChevronRight,
 } from "lucide-react";
+import NewsList from "../components/NewsList";
 
 const LandingPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -72,6 +73,8 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+
+      <NewsList />
 
       {/* 利用者セクション */}
       <div className="py-16 bg-gray-50">

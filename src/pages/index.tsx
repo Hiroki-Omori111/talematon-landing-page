@@ -1,7 +1,6 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import LandingPage from "../components/LandingPage";
-import NewsList from "../components/NewsList";
 
 const pageStyles = {
   color: "#232129",
