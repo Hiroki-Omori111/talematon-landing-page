@@ -34,6 +34,34 @@ const LandingPage = () => {
     },
   ];
 
+  const news = [
+    {
+      category: "イベント",
+      date: "2024.03.20",
+      title:
+        "○○県との連携プロジェクト始動！地域の隠れた名所を発掘するイベントを開催",
+      type: "government",
+    },
+    {
+      category: "メディア",
+      date: "2024.03.15",
+      title: "創作活動を通じた地域活性化の取り組みが○○新聞で紹介されました",
+      type: "media",
+    },
+    {
+      category: "コラボ",
+      date: "2024.03.10",
+      title: "人気クリエイター○○氏とのコラボレーション企画を開始",
+      type: "creator",
+    },
+    {
+      category: "募集",
+      date: "2024.03.05",
+      title: "地方創生に興味のある学生インターン募集中！",
+      type: "student",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
       {/* ヒーローセクション */}
@@ -74,7 +102,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <NewsList />
+      <NewsList news={news} />
 
       {/* 利用者セクション */}
       <div className="py-16 bg-gray-50">
