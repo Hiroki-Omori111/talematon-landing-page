@@ -8,7 +8,7 @@ import {
   Sparkles,
   ChevronRight,
 } from "lucide-react";
-import NewsList from "../components/NewsList";
+import NewsList, { Category, NewsItem } from "../components/NewsList";
 
 const LandingPage = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -34,28 +34,28 @@ const LandingPage = () => {
     },
   ];
 
-  const news = [
+  const news: NewsItem[] = [
     {
-      category: "イベント",
+      category: Category.イベント,
       date: "2024.03.20",
       title:
         "○○県との連携プロジェクト始動！地域の隠れた名所を発掘するイベントを開催",
       type: "government",
     },
     {
-      category: "メディア",
+      category: Category.メディア,
       date: "2024.03.15",
       title: "創作活動を通じた地域活性化の取り組みが○○新聞で紹介されました",
       type: "media",
     },
     {
-      category: "コラボ",
+      category: Category.コラボ,
       date: "2024.03.10",
       title: "人気クリエイター○○氏とのコラボレーション企画を開始",
       type: "creator",
     },
     {
-      category: "募集",
+      category: Category.募集,
       date: "2024.03.05",
       title: "地方創生に興味のある学生インターン募集中！",
       type: "student",
