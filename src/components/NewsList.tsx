@@ -9,7 +9,18 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-const NewsList = ({ news }) => {
+type NewsItem = {
+  category: string;
+  date: string;
+  title: string;
+  type: string;
+};
+
+type NewsListProps = {
+  news: NewsItem[];
+};
+
+const NewsList: React.FC<NewsListProps> = ({ news }) => {
   return (
     <div className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
